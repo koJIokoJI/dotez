@@ -1,0 +1,165 @@
+* {
+	font-size: 11px;
+	font-family: "CodeNewRoman Nerd Font Propo";
+}
+
+window#waybar {
+	all: unset;
+	background-color: black;
+	border: 0.5px solid;
+	border-radius: 0px;
+	border-color: alpha(@color2, 0.85);
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+	padding: 5px;
+	/* border: 0.5px solid;
+	border-radius: 0px;
+	border-color: alpha(@color2, 0.85);
+	background: alpha(@background, 1.0); */
+}
+
+.modules-left {
+	margin: 1px 0px 1px 5px;
+}
+
+.modules-center {
+	margin: 1px 0px 1px 0px;
+}
+
+.modules-right {
+	margin: 1px 5px 1px 0px;
+}
+
+/* .modules-left:hover,
+.modules-center:hover,
+.modules-right:hover {
+	background: red;
+	border-color: @color7;
+} */
+
+tooltip {
+	background: black;
+	color: @color1;
+	border: 0.5px solid;
+	border-color: alpha(@color2, 0.85);
+	border-radius: 0px;
+}
+
+#pulseaudio:hover,
+#language:hover,
+/* #clock:hover, */
+#custom-pacman:hover,
+#custom-notification:hover,
+#bluetooth:hover,
+#network:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#custom-expand_1:hover,
+#custom-expand_2:hover {
+	transition: all .3s ease;
+	/* background-color: alpha(@color8, 0.1); */
+	border-radius: 5px;
+	color: @color9;
+}
+
+#custom-notification,
+#pulseaudio,
+#language,
+#clock,
+#custom-pacman,
+#bluetooth,
+#network,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#custom-expand_1,
+#custom-expand_2,
+#custom-endpoint {
+	margin: 0px 1px;
+	padding: 1px;
+	transition: all .3s ease;
+	color: @color7;
+}
+
+#network {
+	margin-left: 3px;
+}
+
+#cpu {
+	margin-left: 3px;
+}
+
+#workspaces button {
+	all: unset;
+	padding: 0px 3px;
+	color: alpha(@color9, .4);
+	transition: all .3s ease;
+}
+
+#workspaces button:hover {
+	color: @color2;
+}
+
+#workspaces button.active {
+	color: @color9;
+}
+
+#workspaces button.empty {
+	color: rgba(0, 0, 0, 0);
+}
+
+#workspaces button.empty.active {
+	color: @color9;
+}
+
+
+#battery.charging {
+	color: #26A65B;
+}
+
+#battery.warning:not(.charging) {
+	color: #ffbe61;
+}
+
+#battery.critical:not(.charging) {
+	color: #f53c3c;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#group-expand_1 {
+	padding: 0px 5px;
+	transition: all 1s ease;
+}
+
+#group-expand_2 {
+	margin: 0px 5px;
+	transition: all 0.5s ease;
+}
+
+#custom-colorpicker {
+	padding: 0px 5px;
+}
+
+#tray {
+	margin: 0px 5px;
+	transition: all .3s ease;
+
+}
+
+#tray menu * {
+	transition: all .3s ease;
+}
+
+#tray menu separator {
+	transition: all .3s ease;
+}
